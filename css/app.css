@@ -18,11 +18,12 @@ header {
   flex-wrap: wrap;
   width: 100%;
   height: 150px;
+  border-bottom: 2px solid black;
 }
 
 #logo {
   width: 150px;
-  height: 150px;
+  height: 130px;
   border-radius: 70px;
   margin: 10px;
 }
@@ -50,8 +51,9 @@ header {
 }
 
 .image {
-  display: inline-flex;
+ 
   margin: auto;
+  margin-top:20px;
   width: 600px;
   height: 400px;
   box-shadow: 4px 4px 10px 0 black;
@@ -77,8 +79,9 @@ header {
   border-radius: 4px;
 }
 
-.column {
-  float: left;
+.row {
+  display:inline-flex;
+  flex-direction: row;
 }
 
 .picture:hover {
@@ -119,12 +122,13 @@ footer {
 @media screen and (max-width: 460px) {
   header {
     height: 120px;
+    width:100%;
   }
 
   #data {
     margin-top: -120px;
     font-size: 14px;
-    margin-right: -5px:
+    margin-right: 10px;
   }
 
   #logo {
@@ -140,7 +144,7 @@ footer {
     width: 200px;
   }
 
-  .works {
+  .row {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
@@ -178,10 +182,11 @@ footer {
     text-align: center;
     height: 300px;
     width: 300px;
+
   }
 
-  .works {
-    margin-top: 20px;
+  .row {
+    flex-wrap:wrap; 
   }
 
   .picture {
